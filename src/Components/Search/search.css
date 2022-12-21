@@ -1,0 +1,9 @@
+.searchD{
+    display: flex;
+    justify-content: flex-end;
+    z-index: +1;
+    background: none;
+}
+.searchB{
+    margin: 5px 25px;
+}

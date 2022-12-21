@@ -1,0 +1,34 @@
+
+.inputdiv{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 250px;
+    height: 392px;
+    text-align: center;
+    align-self: center;
+    margin-left: 40%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(138, 128, 128, 0.808),rgba(98, 203, 235, 0.692));
+}
+.inputs{
+    padding: 10px;
+    font-size: 15px;
+    margin: 8px;
+}
+.inputdivl{
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 25px;
+    width: 250px;
+    height: 206px;
+    text-align: center;
+    align-self: center;
+    margin-left: 40%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(138, 128, 128, 0.808),rgba(98, 203, 235, 0.692));
+}
