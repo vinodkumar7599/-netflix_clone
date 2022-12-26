@@ -3,16 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import Nav from './Components/Nav/nav';
 import { CssBaseline } from '@mui/material';
-// import { Login } from './Components/Nav/Login';
 import LoginHome from './Components/Nav/LoginHome';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-      <CssBaseline />
+      <CssBaseline /> 
       <LoginHome />
+      
     </Router>
   </React.StrictMode>
 );

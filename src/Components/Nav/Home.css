@@ -1,6 +1,6 @@
-.topHead-1{
+/* .topHead-1{
     
-}
+} */
 .topHead-2{
   display: flex;
   justify-content: flex-end;
@@ -165,25 +165,49 @@
 .namlowere{
   color: rgb(136, 135, 135);
 }
-@media screen and (max-width:650px ) {
-  /* .logo{
+@media screen and (max-width:1060px){
+  .logo{
     margin-left: 15px;
+
   }
   h1{
-    font-size: 30px;
+    font-size: 40px;
   font-weight: 500;
   }
   h2 {
-    font-size: 20px;
+    font-size: 28px;
   }
   h3 {
-    font-size: 15px;
-  } */
+    font-size: 20px;
+  }
+  #bg_img, .overlay{
+    height: 480px;
+    width: 100%;
+  }
+  #title{
+    top: 180px;
+  }
+}
+@media screen and (max-width: 730px ) {
+  .logo{
+    margin-left: 15px;
+
+  }
+  h1{
+    font-size: 22px;
+  font-weight: 500;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 13px;
+  }
   #title{
     top: 185px;
   }
   #bg_img, .overlay{
-    height:535px; 
+    height:435px; 
   }
   .top-2-part-left , .top-4-part-left{
     order: 2;
@@ -214,3 +238,53 @@
     height: 72px;
   }
 }
+@media screen and (max-width:550px ){
+    .registration{
+      display: none;
+    }
+    .select{
+      display: none;
+    }
+    .logo{
+      width: 150px;
+      height: 100px;
+    }
+    #bg_img, .overlay{
+      height: 420px;
+      width: 100%;
+    }
+}
+@media screen and (max-width:460px ){
+  .logo{
+    margin-left: 13px;
+    height: 84px;
+    width: 120px;
+
+  }
+  h1{
+    font-size: 15px;
+  font-weight: 400;
+  }
+  h2 {
+    font-size: 13px;
+  }
+  h3 {
+    font-size: 7px;
+  }
+  #bg_img, .overlay{
+    height: 312px;
+    width: 100%;
+  }
+  #title{
+    top: 133px;
+  }
+  .login{
+    font-size: 10px;
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+/* #registration{
+
+} */

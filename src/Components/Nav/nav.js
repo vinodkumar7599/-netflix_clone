@@ -2,12 +2,8 @@
 
 import "./nav.css";
 import {  NavLink } from "react-router-dom";
-// import { AddMovies, Body } from '../body/bodys';
-// import {useState} from "react";
-// import { AboutUs } from './AboutUs';
-// import { Change } from "../body/Change";
-// import { Login, Registration } from "./Login";
-// import { CssBaseline } from "@mui/material";
+import { MaterialUISwitch } from "../mode";
+
 
 export function Nav() {
   return (
@@ -42,6 +38,7 @@ export function Nav() {
             <li className="nav-li">
               <NavLink className="removeunderline" to="/Channels">Channels</NavLink>
             </li>
+             <MaterialUISwitch /> 
           </div>
         </ul>
       </div>

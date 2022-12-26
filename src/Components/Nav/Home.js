@@ -20,11 +20,11 @@ export function Home() {
             <option> urdu </option>
           </select>
           <Link to={"/login"}>
-            <button className="login">Login</button>
+            <button className="login"  >Login</button>
           </Link>
           <Link to={"/registration"}>
             
-            <button className="registration">Registration</button>
+            <button className="registration" id="registration" >Registration</button>
           </Link>
         </div>
       </div>
