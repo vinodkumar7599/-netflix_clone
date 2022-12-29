@@ -1,0 +1,33 @@
+
+.header-contaner{
+    border: 0px solid transparent;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 49px;
+}
+.head-scroll-image{
+    width: 100%;
+    height: 400px;
+}
+.head-scroll-back-button{
+    position: absolute;
+   top: 191px;
+    left: 5%;
+    border: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    background-color:rgba(134, 132, 132, 0.493);
+}
+.head-scroll-next-button{
+
+    position: absolute;
+    top: 191px;
+    right: 5%;
+    border: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(134, 132, 132, 0.493);
+}

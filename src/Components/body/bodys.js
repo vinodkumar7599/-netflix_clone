@@ -1,30 +1,33 @@
 import { useState } from "react";
 import "./bodys.css";
-import { Link, useHistory, useParams } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import InfoIcon from "@mui/icons-material/Info";
 import DeleteIcon from "@mui/icons-material/Delete";
 import ChangeCircleIcon from "@mui/icons-material/ChangeCircle";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import { ImgHeadSlide } from "./ImgHeadSlide";
 // import { Change } from "./Change";
 // import Button from '@mui/material/Button';
 
 export function Body({ movies, setMovies }) {
+   
+  
+      
   return (
-    <div className="box">
-      {movies.map((abc, index) => (
-        <BodyDiv
-          key={index}
-          id={index}
-          name={abc.names}
-          pic={abc.pic}
-          rate={abc.rating}
-          summary={abc.summary}
-          movies={movies}
-          setMovies={setMovies}
-        />
-      ))}
+  <div className="box">
+   {movies.map((abc, index) => (
+    <BodyDiv
+      key={index}
+      id={index}
+      name={abc.names}
+      pic={abc.pic}
+      rate={abc.rating}
+      summary={abc.summary}
+      movies={movies}
+      setMovies={setMovies}
+    />
+  ))}
     </div>
   );
 }
@@ -58,37 +61,5 @@ export function BodyDiv({ id, name, pic, rate, summary, movies, setMovies }) {
   );
 }
 
-export default function Data() {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+ 
 
-  return (
-    <div>
-      <h1>react</h1>
-      <Carousel responsive={responsive}>
-        <div><h1>item 1</h1></div>
-        <div><h1>item 1</h1></div>
-        <div><h1>item 1</h1></div>
-        <div></div>
-      </Carousel>
-      
-    </div>
-  );
-}

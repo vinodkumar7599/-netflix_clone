@@ -38,7 +38,6 @@ export function Nav() {
             <li className="nav-li">
               <NavLink className="removeunderline" to="/Channels">Channels</NavLink>
             </li>
-             <MaterialUISwitch /> 
           </div>
         </ul>
       </div>

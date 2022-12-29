@@ -4,6 +4,7 @@ import { Link, Switch, Route, useParams, useHistory } from "react-router-dom";
 import { Login, Registration } from "./Login";
 // import { Nav } from "./nav";
 import { AddMovies, Body } from "../body/bodys";
+import { ImgHeadSlide } from "../body/ImgHeadSlide";
 import { useState } from "react";
 import { AboutUs } from "./AboutUs";
 import { Change } from "../body/Change";
@@ -84,13 +85,16 @@ export default function LoginHome() {
       <div>
         <Switch>
           <Route exact path="/login">
-          <Nav />
-          <Body movies={moviesList} setMovies={setMoviesList} />
+            <Nav />
+            <ImgHeadSlide />
+            <Body movies={moviesList} setMovies={setMoviesList} />
+
             {/* <Login /> */}
           </Route>
           <Route path="/registration">
-          <Nav />
-          <Body movies={moviesList} setMovies={setMoviesList} />
+            <Nav />
+            <ImgHeadSlide />
+            <Body movies={moviesList} setMovies={setMoviesList} />
             {/* <Registration /> */}
           </Route>
           <Route exact path="/">
@@ -102,6 +106,7 @@ export default function LoginHome() {
           </Route>
           <Route exact path="/Movies">
             <Nav />
+            <ImgHeadSlide />
             <Body movies={moviesList} setMovies={setMoviesList} />
           </Route>
           <Route path="/AddMovies">
@@ -114,6 +119,7 @@ export default function LoginHome() {
           </Route>
           <Route exact path="/login/Movies">
             <Nav />
+            <ImgHeadSlide />
             <Body movies={moviesList} setMovies={setMoviesList} />
           </Route>
           <Route exact path="/Movies/:id">
@@ -126,7 +132,7 @@ export default function LoginHome() {
           </Route>
 
           <Route path="**">
-          <Nav />
+            <Nav />
             <NotFound />
           </Route>
         </Switch>

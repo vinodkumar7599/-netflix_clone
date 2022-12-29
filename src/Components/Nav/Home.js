@@ -34,7 +34,7 @@ export function Home() {
           src="https://assets.nflxext.com/ffe/siteui/vlv3/c8c8a0ad-86d6-45f1-b21d-821afa4e5027/121450d3-2d2f-41a9-acd6-b050ca0e0424/IN-en-20220801-popsignuptwoweeks-perspective_alpha_website_small.jpg"
           width="100%"
           height="700px"
-          alt=""
+          alt="bg image"
         />
         <div className="overlay"></div>
       </div>
